@@ -6,3 +6,4 @@ bin/platform
 /roles
 /data
 # Hybris123SnippetEnd
+*.class

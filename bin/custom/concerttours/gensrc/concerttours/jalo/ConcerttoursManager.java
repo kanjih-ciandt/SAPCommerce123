@@ -1,11 +1,12 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Aug 16, 2023, 4:44:31 PM                    ---
+ * --- Generated at Aug 17, 2023, 1:58:25 PM                    ---
  * ----------------------------------------------------------------
  */
 package concerttours.jalo;
 
+import concerttours.constants.ConcerttoursConstants;
 import de.hybris.platform.directpersistence.annotation.SLDSafe;
 import de.hybris.platform.jalo.Item;
 import de.hybris.platform.jalo.Item.AttributeMode;
@@ -14,7 +15,6 @@ import de.hybris.platform.jalo.extension.Extension;
 import de.hybris.platform.jalo.extension.ExtensionManager;
 import java.util.HashMap;
 import java.util.Map;
-import concerttours.constants.ConcerttoursConstants;
 
 /**
  * Generated class for type <code>ConcerttoursManager</code>.
