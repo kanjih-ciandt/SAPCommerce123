@@ -18,7 +18,7 @@
 		<enumtype code="MusicType" autocreate="true" generate="true" dynamic="true">
 		</enumtype>
 	</enumtypes>
-	
+
 	<relations>
 		<relation code="Product2RockBand" autocreate="true" generate="false" localized="false">
 			<sourceElement qualifier="tours" type="Product" collectiontype="set" cardinality="many" ordered="false">
