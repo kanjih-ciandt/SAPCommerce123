@@ -7,3 +7,4 @@ bin/platform
 /data
 # Hybris123SnippetEnd
 *.class
+/.idea
