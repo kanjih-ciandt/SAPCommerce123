@@ -2,7 +2,8 @@
 /log
 /temp
 /bin/
-!/bin/custom
+!/bin/custom/
+!/bin/custom/*
 /roles
 /data
 # Hybris123SnippetEnd
