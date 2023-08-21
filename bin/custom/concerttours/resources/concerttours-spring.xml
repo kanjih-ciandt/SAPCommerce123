@@ -21,19 +21,19 @@
     <context:component-scan base-package="concerttours"/>
      <!-- Hybris123SnippetEnd -->
 
-    <!-- Hybris123SnippetStart injectingDefaultBandService -->
-
+     <!-- Hybris123SnippetStart injectingDefaultBandService -->
      <alias name = "defaultBandService" alias = "bandService" />
      <bean id = "defaultBandService" class = "concerttours.service.impl.DefaultBandService" >
          <property name = "bandDAO" ref = "bandDAO" />
      </bean>
     <!-- Hybris123SnippetEnd -->
 
-     <!--  Hybris123SnippetStart injectingDefaultBandFacadeWithMedia -->
+     <!--  Hybris123SnippetStart injectingDefaultBandFacadeWithConfigurationService -->
     <alias name = "defaultBandFacade" alias = "bandFacade" />
     <bean id = "defaultBandFacade" class ="concerttours.facades.impl.DefaultBandFacade" >
         <property name = "bandService" ref = "bandService" />
         <property name="mediaService" ref="mediaService"/>
+        <property name="configurationService" ref="configurationService" />
     </bean>
     <!-- Hybris123SnippetEnd -->
 
@@ -112,7 +112,7 @@
 	       <aop:pointcut id="profiledMethods" expression="execution(* *(..))" />
 	  -->
 
-
+ 
     
      <!-- Hybris123SnippetStart injectingConcertDaysUntilAttributeHandler -->
     <bean id="concertDaysUntilAttributeHandler" class="concerttours.attributehandlers.ConcertDaysUntilAttributeHandler"/>
@@ -142,7 +142,7 @@
 	</bean>
 	<bean id="sendNewsJob" class="concerttours.jobs.SendNewsJob" parent="abstractJobPerformable">
 	    <property name="newsService" ref="newsService" />
-		<property name="configurationService" ref="configurationService" />
+	    <property name="configurationService" ref="configurationService" />	
 	</bean>
 	<!-- Hybris123SnippetEnd -->
  
